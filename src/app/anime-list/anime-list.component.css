@@ -1,0 +1,93 @@
+.alaws321 {
+  overflow: hidden
+}
+
+.alaws321 .alaws-apb {
+  font-size: 14px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.alaws321 .alaws-apb a {
+  line-height: 30px;
+  width: 3.704%;
+  color: #FFFFFF;
+  background: #424242;
+  transition: all 0.25s;
+  text-align: center;
+  float: left
+}
+
+.alaws321 .alaws-apb a:hover {
+  text-decoration: none;
+  background: #2977BE;
+  color: #FFFFFF
+}
+
+.alaws321 .alaws-wrap {
+  margin-top: 5px
+}
+
+.alaws321 .alaws-group {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px
+}
+
+.alaws321 .alaws-head {
+  font-weight: 700;
+  border-bottom: 2px solid #363f5b;
+  font-size: 15px;
+  padding: 5px;
+  color: white;
+}
+
+.alaws321 .alaws-head a {
+  color: #fff
+}
+
+.alaws321 .alaws-item {
+  float: left;
+  width: 40%;
+}
+
+.alaws321 .alaws-title {
+  margin-left: 20px
+}
+
+.alaws321 .alaws-title a {
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 24px;
+  font-size: 18px;
+  color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .alaws321 .alaws-item {
+    width: 50%
+  }
+}
+
+@media screen and (max-width:480px) {
+  .alaws321 .alaws-item {
+    width: 100%
+  }
+
+  .alaws321 .alaws-apb a {
+    margin: 1px;
+    width: 10.43%
+  }
+}
+
+@media screen and (max-width:320px) {
+  .alaws321 .alaws-apb a {
+    width: 10.24%
+  }
+}

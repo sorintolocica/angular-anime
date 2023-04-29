@@ -1,0 +1,200 @@
+ul.xo-tab-links {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+ul.xo-tab-links li {
+    background: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition:all linear 0.15s;
+}
+
+ul.xo-tab-links li.current {
+    background-image: linear-gradient(to right top, #363f5b, #333c58, #303954, #2e3651, #2b334e);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.xo-tab-content {
+    display: none;
+    background: #19191957;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.xo-tab-content.current {
+    display: inherit;
+}
+
+.contributor-block {
+    display: flex;
+    align-items: center;
+}
+
+.contributor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.contributor-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.contributor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contributor-info h3 {
+    margin: 0;
+    color: white;
+}
+
+.contributor-info p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.episode-comments {
+    margin-top: 30px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.comment-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.comment-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comment-username {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.comment-timestamp {
+    margin: 0;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.comment-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+}
+
+.comment-form {
+    margin-top: 30px;
+    color: white;
+}
+
+.comment-form h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    padding: 10px;
+    background-color: #21294d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #1a283f;
+}
+
+.episode-buttons {
+    display: flex;
+    justify-content: center; /* modifica aici */
+    margin-top: 30px;
+}
+
+.episode-buttons button {
+    padding: 10px 20px;
+    background-color: #262e41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.episode-buttons button:hover {
+    background-color: #262e41;
+}
+
+.button-prev {
+    margin-right: 10px;
+}
+
+.button-next {
+    margin-left: 10px;
+}
+
+.button-like {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-like i {
+    color: #aaa;
+    margin-right: 5px;
+}
+
+.button-like.liked i {
+    color: #f00;
+}

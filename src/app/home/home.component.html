@@ -1,0 +1,21 @@
+<div class="container">
+  <h2 class="section-title">Anime populare</h2>
+  <div class="anime-carousel owl-carousel owl-theme">
+    <div class="anime-card" *ngFor="let anime of animeList">
+      <span class="episode-badge">Anime</span>
+      <img [src]="anime.posterImage" alt="{{anime.title}}">
+      <h5 class="card-title">{{anime.title}}</h5>
+    </div>
+    <!-- Adăugați mai multe carduri anime aici -->
+  </div>
+  <h2 class="section-title">Cele mai recente episoade</h2>
+  <div class="row">
+    <div class="col-md-2" *ngFor="let episode of episodeList">
+      <div class="anime-card">
+        <span class="episode-badge">Episodul {{ episode.episodeNumber }}</span>
+        <img [src]="(episode.animeId !== undefined ? getAnimeById(episode.animeId) : undefined)?.posterImage" alt="{{ (episode.animeId !== undefined ? getAnimeById(episode.animeId) : undefined)?.title }} poster">
+        <h5 class="card-title">{{ episode.title }}</h5>
+      </div>
+    </div>
+  </div>
+</div>

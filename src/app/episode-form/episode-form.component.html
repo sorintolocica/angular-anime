@@ -1,0 +1,24 @@
+<div class="container">
+  <form (submit)="onSubmit()" class="p-3 border rounded">
+    <div class="mb-3">
+      <label for="title" class="form-label">Titlu anime:</label>
+      <input type="text" [(ngModel)]="episode.title" name="title" id="title" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="episodeNumber" class="form-label">Numărul episodului:</label>
+      <input type="number" [(ngModel)]="episode.episodeNumber" name="episodeNumber" id="episodeNumber" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="videoUrl" class="form-label">URL video:</label>
+      <input type="text" [(ngModel)]="episode.videoUrl" name="videoUrl" id="videoUrl" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="anime" class="form-label">Anime:</label>
+      <select [(ngModel)]="episode.animeId" name="anime" id="anime" class="form-select" required (change)="onAnimeSelect()">
+        <option *ngFor="let anime of animeList" [value]="anime.id">{{ anime.title }}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Adaugă</button>
+  </form>
+</div>
+<br>
